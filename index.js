@@ -33,6 +33,9 @@ app.use(session({
     saveUninitialized: true
 }))
 
+app.use("/",(req, res) => {
+    res.send("hallooooooooo")
+})
 
 app.use('/api', router)
 
